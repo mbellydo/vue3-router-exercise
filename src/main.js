@@ -1,6 +1,7 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
 
 // TODO add your user plugin here
 
-createApp(App).mount('#app')
+createApp(App).use(router).mount("#app");

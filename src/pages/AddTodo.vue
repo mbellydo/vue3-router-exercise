@@ -19,6 +19,7 @@ export default {
       if (this.todo?.trim()) {
         this.todos.push({ id: new Date().toString, name: this.todo });
         // TODO navigate to /todos
+        this.$router.push({ name: "todos" });
       }
     },
   },
